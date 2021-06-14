@@ -1,5 +1,5 @@
 import React from "react";
-import { Children } from "~/types/children";
+import { Children } from "src/@types/children";
 import { ContainerWithKeyboard } from "./components/ContainerWithKeyboard.component";
 import { ContainerWithoutKeyboard } from "./components/ContainerWithoutKeyboard.component";
 
