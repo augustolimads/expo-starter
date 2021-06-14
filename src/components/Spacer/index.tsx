@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/native";
-import { Children } from "../../@types/Children";
+import { Children } from "src/@types/children";
 
 interface SpacerProps {
   size?: number;
