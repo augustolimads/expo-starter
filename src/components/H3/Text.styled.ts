@@ -2,7 +2,7 @@ import styled, { css } from "styled-components/native";
 import { ThemeProps } from "src/theme";
 
 type TextProps = {
-  color:
+  color?:
     | "black"
     | "darkGray"
     | "gray"
@@ -22,7 +22,7 @@ export const Text = styled.Text.attrs(({ isBold, theme }: TextAttrs) => ({
   },
 }))`
   ${({ color, theme }: TextProps) => css`
-    font-size: 16px;
+    font-size: 20px;
     color: ${theme.colors[color || "black"]};
   `}
 `;

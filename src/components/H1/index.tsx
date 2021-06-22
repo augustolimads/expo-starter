@@ -15,7 +15,7 @@ type TextProps = {
     | "alert";
 };
 
-export function Text({ children, isBold, color }: TextProps) {
+export function H1({ children, isBold, color }: TextProps) {
   return (
     <S.Text color={color} isBold={isBold}>
       {children}
