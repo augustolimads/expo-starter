@@ -1,5 +1,6 @@
 import React from "react";
 import { Children } from "src/@types/children";
+import { ThemeProps } from "~/theme";
 import * as S from "./Text.styled";
 
 type TextProps = {
@@ -15,7 +16,7 @@ type TextProps = {
     | "alert";
 };
 
-export function Text({ children, isBold, color }: TextProps) {
+export function Caption({ children, isBold, color }: TextProps) {
   return (
     <S.Text color={color} isBold={isBold}>
       {children}

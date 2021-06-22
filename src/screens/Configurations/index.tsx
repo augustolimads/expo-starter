@@ -9,12 +9,11 @@ import { H1 } from "src/components/H1";
 
 // import * as S from './styles';
 
-export const Main = () => {
+export const Configurations = () => {
   return (
     <Container>
       <Center>
-        <H1>Home page</H1>
-        <Text>Testando o texto...</Text>
+        <H1>Configuration page</H1>
       </Center>
     </Container>
   );
