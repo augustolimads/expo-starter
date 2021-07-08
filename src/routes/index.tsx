@@ -16,8 +16,8 @@ export function Routes() {
       <Tab.Navigator
         tabBarOptions={{
           showLabel: false,
-          activeTintColor: colors.black,
-          inactiveTintColor: colors.darkGray,
+          activeTintColor: colors.line,
+          inactiveTintColor: colors.highlight,
         }}
       >
         <Tab.Screen
