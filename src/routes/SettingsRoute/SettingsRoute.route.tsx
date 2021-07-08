@@ -16,7 +16,7 @@ export function SettingsRoute() {
       headerMode="screen"
       screenOptions={{
         headerTintColor: "white",
-        headerStyle: { backgroundColor: colors.blueHighlight },
+        headerStyle: { backgroundColor: colors.heading },
         headerLeft: () => <BackButton />,
       }}
     >
