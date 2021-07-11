@@ -7,6 +7,7 @@ import { Main } from "src/screens/Main";
 import { Configurations } from "src/screens/Configurations";
 import { colors } from "src/theme/colors";
 import { BackButton } from "src/components/BackButton";
+import { theme } from "src/theme";
 
 const Stack = createStackNavigator();
 
@@ -15,8 +16,8 @@ export function SettingsRoute() {
     <Stack.Navigator
       headerMode="screen"
       screenOptions={{
-        headerTintColor: "white",
-        headerStyle: { backgroundColor: colors.heading },
+        headerTintColor: theme.colors.primary,
+        headerStyle: { backgroundColor: theme.colors.secondary100 },
         headerLeft: () => <BackButton />,
       }}
     >

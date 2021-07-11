@@ -1,5 +1,8 @@
 export const colors = {
-  primary: "#E51C44",
+  primary: "#991F36",
+  background: "#DDE3F0",
+  highlight: "#ABB1CC",
+  heading: "rgba(0,0,0,0.7)",
   secondary100: "#0A1033",
   secondary90: "#0D133D",
   secondary80: "#0E1647",
@@ -8,10 +11,6 @@ export const colors = {
   secondary50: "#243189",
   secondary40: "#1D2766",
   secondary30: "#495BCC",
-
-  overlay: "rgba(0,0,0,0.7)",
-  highlight: "#ABB1CC",
-  heading: "#DDE3F0",
-  line: "#991F36",
-  on: "#32BD50",
+  alert: "#E51C44",
+  success: "#32BD50",
 };

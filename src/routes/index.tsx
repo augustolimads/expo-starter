@@ -7,6 +7,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { Main } from "src/screens/Main";
 import { colors } from "src/theme/colors";
 import { SettingsRoute } from "./SettingsRoute/SettingsRoute.route";
+import { theme } from "src/theme";
 
 const Tab = createBottomTabNavigator();
 
@@ -16,8 +17,9 @@ export function Routes() {
       <Tab.Navigator
         tabBarOptions={{
           showLabel: false,
-          activeTintColor: colors.line,
+          activeTintColor: colors.primary,
           inactiveTintColor: colors.highlight,
+          style: { backgroundColor: theme.colors.secondary100 },
         }}
       >
         <Tab.Screen

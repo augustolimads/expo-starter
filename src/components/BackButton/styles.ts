@@ -7,5 +7,5 @@ export const Container = styled.TouchableOpacity``;
 export const Icon = styled(Ionicons).attrs(({ theme }) => ({
   name: "chevron-back",
   size: 24,
-  color: theme.colors.background,
+  color: theme.colors.primary,
 }))``;
