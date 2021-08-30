@@ -1,4 +1,4 @@
-import { Children } from "src/@types/children";
+import { Children } from "src/types/children";
 
 export type ContainerInsideProps = {
   children?: Children;

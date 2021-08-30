@@ -1,6 +1,6 @@
 import React from "react";
-import { Children } from "src/@types/children";
-import * as S from "./Center.styled";
+import { Children } from "src/types/children";
+import * as S from "./styles";
 
 type CenterProps = { children: Children };
 

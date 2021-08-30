@@ -1,6 +1,6 @@
 import React from "react";
 import { Platform, Keyboard } from "react-native";
-import * as S from "../Container.styled";
+import * as S from "../styles";
 import { ContainerInsideProps } from "./ContainerInsideProps.type";
 
 export function ContainerWithKeyboard({

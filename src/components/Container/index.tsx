@@ -1,7 +1,7 @@
 import React from "react";
-import { Children } from "src/@types/children";
-import { ContainerWithKeyboard } from "./components/ContainerWithKeyboard.component";
-import { ContainerWithoutKeyboard } from "./components/ContainerWithoutKeyboard.component";
+import { Children } from "src/types/children";
+import { ContainerWithKeyboard } from "./components/ContainerWithKeyboard";
+import { ContainerWithoutKeyboard } from "./components/ContainerWithoutKeyboard";
 
 type ContainerProps = {
   children?: Children;
