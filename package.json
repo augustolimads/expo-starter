@@ -5,17 +5,36 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "lint": "eslint src --max-warnings=0",
+    "test": "jest",
+    "test:watch": "yarn test --watch",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
+    ]
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
+    ]
   },
   "dependencies": {
     "@expo-google-fonts/lato": "^0.1.0",
+    "@hookform/resolvers": "^2.8.0",
     "@react-native-async-storage/async-storage": "^1.13.0",
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/bottom-tabs": "^5.11.11",
     "@react-navigation/drawer": "^5.12.5",
     "@react-navigation/native": "^5.9.4",
     "@react-navigation/stack": "^5.14.5",
+    "@reduxjs/toolkit": "^1.6.1",
     "axios": "^0.21.1",
+    "date-fns": "^2.23.0",
     "expo": "~41.0.1",
     "expo-app-loading": "^1.0.3",
     "expo-font": "~9.1.0",
@@ -23,6 +42,7 @@
     "expo-status-bar": "~1.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-hook-form": "^7.13.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
     "react-native-gesture-handler": "~1.10.2",
     "react-native-reanimated": "~2.1.0",
@@ -30,17 +50,22 @@
     "react-native-screens": "~3.0.0",
     "react-native-svg": "12.1.0",
     "react-native-web": "~0.13.12",
+    "react-redux": "^7.2.4",
     "sentry-expo": "^3.1.0",
     "styled-components": "^5.3.0",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@types/jest": "^27.0.1",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
     "@types/styled-components": "^5.1.10",
     "@types/styled-components-react-native": "^5.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
     "eslint": "^7.28.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -50,7 +75,11 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.1",
+    "jest-expo": "^42.1.0",
+    "plop": "^2.7.4",
     "prettier": "^2.3.1",
+    "react-test-renderer": "^17.0.2",
     "reactotron-react-native": "^5.0.0",
     "typescript": "~4.0.0"
   },
